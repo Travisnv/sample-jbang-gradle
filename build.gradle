@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.travisnv'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  implementation  'info.picocli:picocli:4.6.3'
+  implementation  'com.konghq:unirest-java:3.14.1'
+  implementation  'com.konghq:unirest-object-mappers-gson:3.14.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+sourceCompatibility = "11"
+targetCompatibility = "11"
